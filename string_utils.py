@@ -1,7 +1,7 @@
 
 
 
-def split_by_capitals(formula):
+def split_before_each_uppercases(formula):
   start_index = 0
   split_formula = [] 
   for end_index in range(1,len(formula)) :
@@ -32,7 +32,7 @@ def split_at_first_digit(formula):
 
 def count_atoms_in_molecule(molecular_formula):
   atom_dict = {}
-  parts = split_by_capitals(molecular_formula)
+  parts = split_before_each_uppercases(molecular_formula)
   
   for part in parts:
     atom_name, count = split_at_first_digit(part)
