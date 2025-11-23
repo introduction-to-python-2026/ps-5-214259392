@@ -31,14 +31,14 @@ def split_at_first_digit(formula):
   return prefix, int(number_str)
 
 def count_atoms_in_molecule(molecular_formula):
-  atoms_dict = {}
+  atom_dict = {}
   parts = split_before_each_uppercases(molecular_formula)
   
   for part in parts:
     atom_name, count = split_at_first_digit(part)
-    atoms_dict[atom_name] = atoms_dict.get(atom_name, 0) + count 
+    atom_dict[atom_name] = atom_dict.get(atom_name, 0) + count 
   
-  return atoms_dict  
+  return atom_dict  
 
 
 
