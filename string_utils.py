@@ -36,7 +36,7 @@ def count_atoms_in_molecule(molecular_formula):
   
   for part in parts:
     atom_name, count = split_at_first_digit(part)
-    atom_dict[atom_name] = atom_dict.get(atom_name, 0) + count 
+    atoms_dict[atom_name] = atoms_dict.get(atom_name, 0) + count 
   
   return atoms_dict  
 
